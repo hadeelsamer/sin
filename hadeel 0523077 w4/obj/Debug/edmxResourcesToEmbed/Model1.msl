@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="menagerModelStoreContainer" CdmEntityContainer="menagerEntities">
+    <EntitySetMapping Name="tasks">
+      <EntityTypeMapping TypeName="menagerModel.task">
+        <MappingFragment StoreEntitySet="task">
+          <ScalarProperty Name="TID" ColumnName="TID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="Statuss" ColumnName="Statuss" />
+          <ScalarProperty Name="duedata" ColumnName="duedata" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="menagerModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="UsID" ColumnName="UsID" />
+          <ScalarProperty Name="UName" ColumnName="UName" />
+          <ScalarProperty Name="Upass" ColumnName="Upass" />
+          <ScalarProperty Name="UEmail" ColumnName="UEmail" />
+          <ScalarProperty Name="Urole" ColumnName="Urole" />
+          <ScalarProperty Name="taskID" ColumnName="taskID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
